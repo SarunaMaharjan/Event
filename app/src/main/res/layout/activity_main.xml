@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        >
+
+            <ImageButton
+                    android:layout_width="158dp"
+                    android:layout_height="162dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:id="@+id/i1"
+                    android:src="@mipmap/catering"
+            />
+            <TextView
+                    android:layout_width="98dp"
+                    android:layout_height="46dp"
+                    android:layout_below="@+id/i1"
+                    android:text="CATERING"
+                    android:layout_marginHorizontal="55dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="6dp"/>
+
+            <ImageButton
+                    android:layout_width="158dp"
+                    android:layout_height="162dp"
+                    android:layout_marginHorizontal="210dp"
+                    android:layout_marginTop="100dp"
+                    android:id="@+id/i2"
+                    android:src="@mipmap/dec"
+            />
+            <TextView
+                    android:layout_width="98dp"
+                    android:layout_height="46dp"
+                    android:layout_below="@+id/i2"
+                    android:text="DECORATION"
+                    android:layout_marginHorizontal="248dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="6dp"/>
+
+            <ImageButton
+                    android:layout_width="158dp"
+                    android:layout_height="162dp"
+                    android:layout_marginTop="320dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:id="@+id/i3"
+                    android:src="@mipmap/furni"
+            />
+            <TextView
+                    android:layout_width="98dp"
+                    android:layout_height="46dp"
+                    android:layout_below="@+id/i3"
+                    android:text="FURNITURE"
+                    android:layout_marginHorizontal="55dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="6dp"/>
+
+            <ImageButton
+                    android:layout_width="158dp"
+                    android:layout_height="162dp"
+                    android:layout_marginHorizontal="210dp"
+                    android:layout_marginTop="320dp"
+                    android:id="@+id/i4"
+                    android:src="@mipmap/game"
+            />
+            <TextView
+                    android:layout_width="98dp"
+                    android:layout_height="46dp"
+                    android:layout_below="@+id/i4"
+                    android:text="GAMES"
+                    android:layout_marginHorizontal="260dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="6dp"/>
+
+            <ImageButton
+                    android:layout_width="158dp"
+                    android:layout_height="162dp"
+                    android:layout_marginTop="540dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:id="@+id/i5"
+                    android:src="@mipmap/lights"
+            />
+            <TextView
+                    android:layout_width="98dp"
+                    android:layout_height="46dp"
+                    android:layout_below="@+id/i5"
+                    android:text="LIGHTS"
+                    android:layout_marginHorizontal="65dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="6dp"/>
+
+            <ImageButton
+                    android:layout_width="158dp"
+                    android:layout_height="162dp"
+                    android:layout_marginHorizontal="210dp"
+                    android:layout_marginTop="540dp"
+                    android:id="@+id/i6"
+                    android:src="@mipmap/pro"
+            />
+            <TextView
+                    android:layout_width="98dp"
+                    android:layout_height="46dp"
+                    android:layout_below="@+id/i6"
+                    android:text="PROJECTOR"
+                    android:layout_marginHorizontal="248dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="44dp"/>
+            <ImageButton
+                    android:layout_width="158dp"
+                    android:layout_height="162dp"
+                    android:layout_marginTop="740dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:id="@+id/i7"
+                    android:src="@mipmap/sound"
+            />
+
+            <TextView
+                    android:layout_width="98dp"
+                    android:layout_height="46dp"
+                    android:layout_below="@+id/i7"
+                    android:text="SOUND"
+                    android:layout_marginHorizontal="65dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="6dp"/>
+
+            <ImageButton
+                    android:layout_width="158dp"
+                    android:layout_height="162dp"
+                    android:layout_marginHorizontal="210dp"
+                    android:layout_marginTop="740dp"
+                    android:id="@+id/i8"
+                    android:src="@mipmap/tent"
+            />
+            <TextView
+                    android:layout_width="98dp"
+                    android:layout_height="46dp"
+                    android:layout_below="@+id/i8"
+                    android:text="TENT"
+                    android:layout_marginHorizontal="268dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="6dp"/>
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CATEGORIES"
+                    android:layout_marginHorizontal="110dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorAccent"
+            />
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+    <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/home"
+            android:src="@mipmap/house"
+            android:layout_marginBottom="19dp"/>
+
+
+    <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="77dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/acc"
+            android:src="@mipmap/cart"
+            android:layout_marginBottom="11dp"
+            android:layout_marginHorizontal="280dp"/>
+
+
+
+</RelativeLayout>
+
+</RelativeLayout>

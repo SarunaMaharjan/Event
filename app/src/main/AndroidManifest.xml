@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.event">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/evento"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/evento"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity
+                android:name=".Pay"
+                android:label="@string/title_activity_pay"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".Cart">
+        </activity>
+        <activity android:name=".Decorationdesc">
+        </activity>
+        <activity android:name=".Projector">
+        </activity>
+        <activity android:name=".Furniture">
+        </activity>
+        <activity android:name=".Tent">
+        </activity>
+        <activity android:name=".Sound">
+        </activity>
+        <activity android:name=".Lights">
+        </activity>
+        <activity android:name=".Games">
+        </activity>
+        <activity android:name=".Decoration">
+        </activity>
+        <activity android:name=".Caterin">
+        </activity>
+        <activity android:name=".Front">
+        </activity>
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".Register"/>
+    </application>
+
+</manifest>
