@@ -18,8 +18,6 @@
         </activity>
         <activity android:name=".Cart">
         </activity>
-        <activity android:name=".Decorationdesc">
-        </activity>
         <activity android:name=".Projector">
         </activity>
         <activity android:name=".Furniture">

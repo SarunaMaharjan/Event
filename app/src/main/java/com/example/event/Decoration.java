@@ -27,12 +27,6 @@ public class Decoration extends AppCompatActivity {
 
         CustomAdapter customAdapter = new CustomAdapter ();
         gridView.setAdapter(customAdapter);
-       /* gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent1=new Intent(getApplicationContext(),Decorationdesc.class);
-            }
-        });*/
 
 
     }
@@ -67,7 +61,7 @@ public class Decoration extends AppCompatActivity {
             image.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(Decoration.this,Decorationdesc.class));
+                 //   startActivity(new Intent(Decoration.this,Decorationdesc.class));
                 }
             });
 

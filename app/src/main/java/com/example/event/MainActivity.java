@@ -5,14 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ImageButton i1,i2,i3,i4,i5,i6,i7,i8;
     private ImageButton home,account;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,11 +97,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this,Cart.class));
             }
         });
-
-
-
-
-
 
     }
 
