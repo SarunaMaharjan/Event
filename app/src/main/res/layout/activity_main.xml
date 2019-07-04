@@ -9,10 +9,14 @@
 >
 
     <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
-                android:scrollbarStyle="insideInset">
+                android:scrollbarStyle="insideInset"
+    android:id="@+id/scroll">
 
 
-        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/re"
         >
 
             <ImageButton
@@ -117,11 +121,11 @@
                     android:layout_width="98dp"
                     android:layout_height="46dp"
                     android:layout_below="@+id/i6"
-                    android:text="PROJECTOR"
+                  android:text="PROJECTOR"
                     android:layout_marginHorizontal="248dp"
                     android:textColor="@color/colorPrimaryDark"
                     android:fontFamily="serif"
-                    android:layout_marginTop="44dp"/>
+                    android:layout_marginTop="4dp"/>
             <ImageButton
                     android:layout_width="158dp"
                     android:layout_height="162dp"
@@ -173,44 +177,5 @@
 
     </ScrollView>
 
-    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
-
-        <ImageButton
-                android:layout_width="89dp"
-                android:layout_height="76dp"
-                android:id="@+id/home"
-                android:src="@mipmap/house"
-                android:layout_marginBottom="19dp"
-                android:layout_alignParentBottom="true"
-        />
-
-        <ImageButton
-                android:layout_width="118dp"
-                android:layout_height="75dp"
-                android:layout_alignParentBottom="true"
-                android:id="@+id/account"
-                android:src="@mipmap/acc"
-                android:layout_marginHorizontal="80dp"/>
-
-        <ImageButton
-                android:layout_width="91dp"
-                android:layout_height="77dp"
-                android:layout_alignParentBottom="true"
-                android:id="@+id/search"
-                android:src="@android:drawable/ic_search_category_default"
-                android:layout_marginHorizontal="180dp"
-        />
-
-        <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="80dp"
-                android:layout_alignParentBottom="true"
-                android:id="@+id/acc"
-                android:src="@mipmap/cart"
-                android:layout_marginBottom="-8dp"
-                android:layout_marginHorizontal="240dp"/>
-
-
-    </RelativeLayout>
 
 </RelativeLayout>

@@ -25,8 +25,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         i7=findViewById(R.id.i7);
         i8=findViewById(R.id.i8);
 
-        home=findViewById(R.id.home);
-        account=findViewById(R.id.acc);
 
         i1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,19 +82,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,Front.class));
-
-            }
-        });
-        account.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,Cart.class));
-            }
-        });
 
     }
 
