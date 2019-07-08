@@ -18,16 +18,17 @@
         <ImageView
                 android:id="@+id/post"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
                 android:adjustViewBounds="true"/>
 
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/desc"
-                android:text="Heeloworld"
-                android:textSize="20sp"/>
+                android:id="@+id/title"
+                android:textSize="20sp"
+                android:background="@color/colorAccent"
+        />
 
 
     </LinearLayout>
