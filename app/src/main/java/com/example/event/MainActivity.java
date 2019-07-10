@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         i1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              startActivity(new Intent(MainActivity.this,Caterin.class));
+              startActivity(new Intent(MainActivity.this, Food.class));
             }
         });
 

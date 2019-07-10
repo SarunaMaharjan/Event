@@ -1,31 +1,22 @@
 package com.example.event;
 
-import android.content.Context;
 import android.content.Intent;
-import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.firebase.ui.database.FirebaseRecyclerOptions;
-import com.firebase.ui.database.SnapshotParser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseReference;
+import com.firebase.ui.database.*;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.squareup.picasso.Picasso;
 
 public class Furniture extends AppCompatActivity {
 
-    private RecyclerView recyclerView;
-    private DatabaseReference databaseReference;
+    ListView lv;
+    FirebaseListAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,81 +26,58 @@ public class Furniture extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Furnitures");
 
-       Intent intent=new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
 
-        databaseReference= FirebaseDatabase.getInstance().getReference().child("Furniture");
-        databaseReference.keepSynced(true);
+        lv= (ListView) findViewById(R.id.listview1);
 
-        recyclerView=(RecyclerView) findViewById(R.id.myrecycleview);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        fetch();
+        Query query= FirebaseDatabase . getInstance().getReference().child("Furniture");
+        FirebaseListOptions<Model> options = new FirebaseListOptions.Builder<Model>()
+                .setLayout(R.layout.descriptionbar)
+                .setLifecycleOwner(Furniture.this)
+                .setQuery(query, Model.class)
+                .build();
 
-    }
-
-
-    private void fetch() {
-        Query query = FirebaseDatabase.getInstance()
-                .getReference()
-                .child("Furniture");
-
-        FirebaseRecyclerOptions<Model> options =
-                new FirebaseRecyclerOptions.Builder<Model>()
-                        .setQuery(query, new SnapshotParser<Model>() {
-                            @NonNull
-                            @Override
-                            public Model parseSnapshot(@NonNull DataSnapshot snapshot) {
-                                return new Model(snapshot.child("Title").getValue().toString(),
-                                        snapshot.child("Image").getValue().toString());
-
-                            }
-                        })
-                        .build();
-
-       FirebaseRecyclerAdapter adapter = new FirebaseRecyclerAdapter<Model, ViewHolder>(options) {
+        adapter = new FirebaseListAdapter(options) {
             @Override
-            public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-                View view = LayoutInflater.from(parent.getContext())
-                        .inflate(R.layout.subfurniture, parent, false);
+            protected void populateView(View v, Object model, final int position)
+            {
 
-                return new ViewHolder(view);
+                ImageView img= v.findViewById(R.id.post);
+                TextView title = v.findViewById(R.id.title);
+
+                img.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent subfurniture= new Intent(Furniture.this,SubFurniture.class);
+                        subfurniture.putExtra("Id",adapter.getRef(position).getKey());
+                        startActivity(subfurniture);
+
+                    }
+                });
+
+                Model mod= (Model) model;
+                title.setText(mod.getTitle().toString());
+                Picasso.with(Furniture.this)
+                        .load(mod.getImage())
+                        .into(img);
             }
-
-
-            @Override
-            protected void onBindViewHolder(ViewHolder holder, final int position, Model model) {
-                holder.setTitle(model.getTitle());
-                holder.setImage(getApplicationContext(),model.getImage());
-
-
-            }
-
         };
-        recyclerView.setAdapter(adapter);
 
+        lv.setAdapter(adapter);
 
     }
 
-
-
-
-    public class ViewHolder extends RecyclerView.ViewHolder {
-
-        public TextView txtTitle;
-        public ImageView post;
-
-        public ViewHolder(View itemView) {
-            super(itemView);
-            txtTitle = itemView.findViewById(R.id.title);
-            post = itemView.findViewById(R.id.post);
-        }
-
-        public void setTitle(String Title) {
-            txtTitle.setText(Title);
-        }
-
-
-        public void setImage(Context ctx,String Image) {
-            Picasso.with(ctx).load(Image).into(post);
-        }
+    @Override
+    protected void onStart() {
+        super.onStart();
+        adapter.startListening();
     }
-}
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        adapter.stopListening();
+    }
+
+    }
+

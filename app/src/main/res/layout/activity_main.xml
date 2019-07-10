@@ -6,6 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity"
+
 >
 
     <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
@@ -23,7 +24,7 @@
                     android:layout_width="158dp"
                     android:layout_height="162dp"
                     android:layout_marginTop="100dp"
-                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginHorizontal="10dp"
                     android:id="@+id/i1"
                     android:src="@mipmap/catering"
             />
@@ -31,8 +32,8 @@
                     android:layout_width="98dp"
                     android:layout_height="46dp"
                     android:layout_below="@+id/i1"
-                    android:text="CATERING"
-                    android:layout_marginHorizontal="55dp"
+                    android:text="FOOD"
+                    android:layout_marginHorizontal="65dp"
                     android:textColor="@color/colorPrimaryDark"
                     android:fontFamily="serif"
                     android:layout_marginTop="6dp"/>
@@ -40,7 +41,7 @@
             <ImageButton
                     android:layout_width="158dp"
                     android:layout_height="162dp"
-                    android:layout_marginHorizontal="210dp"
+                    android:layout_marginHorizontal="205dp"
                     android:layout_marginTop="100dp"
                     android:id="@+id/i2"
                     android:src="@mipmap/dec"
@@ -50,7 +51,7 @@
                     android:layout_height="46dp"
                     android:layout_below="@+id/i2"
                     android:text="DECORATION"
-                    android:layout_marginHorizontal="248dp"
+                    android:layout_marginHorizontal="238dp"
                     android:textColor="@color/colorPrimaryDark"
                     android:fontFamily="serif"
                     android:layout_marginTop="6dp"/>
@@ -59,7 +60,7 @@
                     android:layout_width="158dp"
                     android:layout_height="162dp"
                     android:layout_marginTop="320dp"
-                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginHorizontal="10dp"
                     android:id="@+id/i3"
                     android:src="@mipmap/furni"
             />
@@ -68,7 +69,7 @@
                     android:layout_height="46dp"
                     android:layout_below="@+id/i3"
                     android:text="FURNITURE"
-                    android:layout_marginHorizontal="55dp"
+                    android:layout_marginHorizontal="45dp"
                     android:textColor="@color/colorPrimaryDark"
                     android:fontFamily="serif"
                     android:layout_marginTop="6dp"/>
@@ -76,7 +77,7 @@
             <ImageButton
                     android:layout_width="158dp"
                     android:layout_height="162dp"
-                    android:layout_marginHorizontal="210dp"
+                    android:layout_marginHorizontal="205dp"
                     android:layout_marginTop="320dp"
                     android:id="@+id/i4"
                     android:src="@mipmap/game"
@@ -86,7 +87,7 @@
                     android:layout_height="46dp"
                     android:layout_below="@+id/i4"
                     android:text="GAMES"
-                    android:layout_marginHorizontal="260dp"
+                    android:layout_marginHorizontal="250dp"
                     android:textColor="@color/colorPrimaryDark"
                     android:fontFamily="serif"
                     android:layout_marginTop="6dp"/>
@@ -95,7 +96,7 @@
                     android:layout_width="158dp"
                     android:layout_height="162dp"
                     android:layout_marginTop="540dp"
-                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginHorizontal="10dp"
                     android:id="@+id/i5"
                     android:src="@mipmap/lights"
             />
@@ -104,7 +105,7 @@
                     android:layout_height="46dp"
                     android:layout_below="@+id/i5"
                     android:text="LIGHTS"
-                    android:layout_marginHorizontal="65dp"
+                    android:layout_marginHorizontal="55dp"
                     android:textColor="@color/colorPrimaryDark"
                     android:fontFamily="serif"
                     android:layout_marginTop="6dp"/>
@@ -112,7 +113,7 @@
             <ImageButton
                     android:layout_width="158dp"
                     android:layout_height="162dp"
-                    android:layout_marginHorizontal="210dp"
+                    android:layout_marginHorizontal="205dp"
                     android:layout_marginTop="540dp"
                     android:id="@+id/i6"
                     android:src="@mipmap/pro"
@@ -122,7 +123,7 @@
                     android:layout_height="46dp"
                     android:layout_below="@+id/i6"
                   android:text="PROJECTOR"
-                    android:layout_marginHorizontal="248dp"
+                    android:layout_marginHorizontal="238dp"
                     android:textColor="@color/colorPrimaryDark"
                     android:fontFamily="serif"
                     android:layout_marginTop="4dp"/>
@@ -130,7 +131,7 @@
                     android:layout_width="158dp"
                     android:layout_height="162dp"
                     android:layout_marginTop="740dp"
-                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginHorizontal="10dp"
                     android:id="@+id/i7"
                     android:src="@mipmap/sound"
             />
@@ -140,7 +141,7 @@
                     android:layout_height="46dp"
                     android:layout_below="@+id/i7"
                     android:text="SOUND"
-                    android:layout_marginHorizontal="65dp"
+                    android:layout_marginHorizontal="55dp"
                     android:textColor="@color/colorPrimaryDark"
                     android:fontFamily="serif"
                     android:layout_marginTop="6dp"/>
@@ -148,7 +149,7 @@
             <ImageButton
                     android:layout_width="158dp"
                     android:layout_height="162dp"
-                    android:layout_marginHorizontal="210dp"
+                    android:layout_marginHorizontal="205dp"
                     android:layout_marginTop="740dp"
                     android:id="@+id/i8"
                     android:src="@mipmap/tent"
@@ -158,7 +159,7 @@
                     android:layout_height="46dp"
                     android:layout_below="@+id/i8"
                     android:text="TENT"
-                    android:layout_marginHorizontal="268dp"
+                    android:layout_marginHorizontal="260dp"
                     android:textColor="@color/colorPrimaryDark"
                     android:fontFamily="serif"
                     android:layout_marginTop="6dp"/>
@@ -167,8 +168,7 @@
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="CATEGORIES"
-                    android:layout_marginHorizontal="110dp"
+                    android:text="                           CATEGORIES"
                     android:textSize="20dp"
                     android:textColor="@color/colorAccent"
             />

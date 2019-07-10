@@ -7,16 +7,25 @@
     <application
             android:allowBackup="true"
             android:icon="@mipmap/evento"
-            android:label="@string/app_name"
+            android:label="Evento"
             android:roundIcon="@mipmap/evento"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity
-                android:name=".Pay"
-                android:label="@string/title_activity_pay"
-                android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Subtent">
         </activity>
-        <activity android:name=".Cart">
+        <activity android:name=".SubSound">
+        </activity>
+        <activity android:name=".SubProjector">
+        </activity>
+        <activity android:name=".SubLight">
+        </activity>
+        <activity android:name=".SubGame">
+        </activity>
+        <activity android:name=".SubFurniture">
+        </activity>
+        <activity android:name=".SubFood">
+        </activity>
+        <activity android:name=".Subdecoration">
         </activity>
         <activity android:name=".Projector">
         </activity>
@@ -32,9 +41,7 @@
         </activity>
         <activity android:name=".Decoration">
         </activity>
-        <activity android:name=".Caterin">
-        </activity>
-        <activity android:name=".Front">
+        <activity android:name=".Food">
         </activity>
         <activity android:name=".Login">
             <intent-filter>

@@ -4,14 +4,34 @@ public class Model  {
 
 
 
-    String Title;
-    String Image;
+   private String Image;
+    private String Title;
+    private String Description;
+    private String Price;
+    private String Delivery;
+    private String d_id;
 
 
-    public Model(String Title, String Image) {
-       this. Title = Title;
-        this.Image = Image;
+
+    public Model( String image, String Title, String Description, String Delivery, String Price , String d_id) {
+        this.d_id = d_id;
+        Image = image;
+        this.Title = Title;
+        this.Description = Description;
+        this.Delivery=Delivery;
+        this.Price=Price;
     }
+
+
+
+    public String getImage() {
+        return Image;
+    }
+
+    public void setImage(String image) {
+        Image = image;
+    }
+
 
     public String getTitle() {
         return Title;
@@ -21,16 +41,33 @@ public class Model  {
         this.Title = Title;
     }
 
-    public String getImage() {
-        return Image;
+    public String getDescription() {
+        return Description;
     }
 
-    public void setImage(String Image) {
-        this.Image = Image;
+    public void setDescription(String Description) {
+        this.Description = Description;
+    }
+
+    public String getPrice() {
+        return Price;
+    }
+
+    public void setPrice(String Price) {
+        this.Price = Price;
+    }
+
+    public String getDelivery() {
+        return Delivery;
+    }
+
+    public void setDelivery(String Delivery) {
+        this.Delivery = Delivery;
     }
 
 
-public Model()
+
+    public Model()
 {
 
 }
