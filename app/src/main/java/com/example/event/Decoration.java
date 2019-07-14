@@ -67,7 +67,7 @@ public class Decoration extends AppCompatActivity {
             image.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(Decoration.this,Decorationdesc.class));
+               //     startActivity(new Intent(Decoration.this,Decorationdesc.class));
                 }
             });
 

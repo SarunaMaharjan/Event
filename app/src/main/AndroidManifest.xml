@@ -11,14 +11,22 @@
             android:roundIcon="@mipmap/evento"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".Navigation">
+        </activity>
+        <activity android:name=".Front_slide">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
         <activity
                 android:name=".Pay"
                 android:label="@string/title_activity_pay"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".Cart">
-        </activity>
-        <activity android:name=".Decorationdesc">
         </activity>
         <activity android:name=".Projector">
         </activity>
@@ -39,13 +47,9 @@
         <activity android:name=".Front">
         </activity>
         <activity android:name=".Login">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity">
+        </activity>
         <activity android:name=".Register"/>
     </application>
 

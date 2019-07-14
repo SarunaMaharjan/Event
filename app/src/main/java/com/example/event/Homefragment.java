@@ -1,97 +1,101 @@
 package com.example.event;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class Homefragment extends Fragment implements View.OnClickListener{
+
 
     private ImageButton i1,i2,i3,i4,i5,i6,i7,i8;
     private ImageButton home,account;
 
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container ,@Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        i1 = view.findViewById(R.id.i1);
+        i2 = view.findViewById(R.id.i2);
+        i3 = view.findViewById(R.id.i3);
+        i4 = view.findViewById(R.id.i4);
+        i5 = view.findViewById(R.id.i5);
+        i6 = view.findViewById(R.id.i6);
+        i7 = view.findViewById(R.id.i7);
+        i8 = view.findViewById(R.id.i8);
+        //
+        //return inflater.inflate(R.layout.fragment_home,container,false);
 
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        i1=findViewById(R.id.i1);
-        i2=findViewById(R.id.i2);
-        i3=findViewById(R.id.i3);
-        i4=findViewById(R.id.i4);
-        i5=findViewById(R.id.i5);
-        i6=findViewById(R.id.i6);
-        i7=findViewById(R.id.i7);
-        i8=findViewById(R.id.i8);
 
         i1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              startActivity(new Intent(MainActivity.this,Caterin.class));
+                startActivity(new Intent(getActivity(), Caterin.class));
             }
         });
+
 
         i2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,Decoration.class));
+                startActivity(new Intent(getActivity(),Decoration.class));
             }
         });
 
         i3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,Furniture.class));
+                startActivity(new Intent(getActivity(),Furniture.class));
             }
         });
 
         i4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,Games.class));
+                startActivity(new Intent(getActivity(),Games.class));
             }
         });
 
         i5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,Lights.class));
+                startActivity(new Intent(getActivity(),Lights.class));
             }
         });
 
         i6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,Projector.class));
+                startActivity(new Intent(getActivity(),Projector.class));
             }
         });
 
         i7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,Sound.class));
+                startActivity(new Intent(getActivity(),Sound.class));
             }
         });
 
         i8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,Tent.class));
+                startActivity(new Intent(getActivity(),Tent.class));
             }
         });
 
 
 
-
+        return view;
 
     }
+
+
 
 
     @Override
