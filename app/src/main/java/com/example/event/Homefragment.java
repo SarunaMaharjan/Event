@@ -35,7 +35,7 @@ public class Homefragment extends Fragment implements View.OnClickListener{
         i1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), Caterin.class));
+                startActivity(new Intent(getActivity(), Food.class));
             }
         });
 

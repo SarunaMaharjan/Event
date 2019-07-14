@@ -1,37 +1,77 @@
 package com.example.event;
 
-public class Model {
-    private int image;
-    private  String title;
-    private  String descrip;
 
-    public Model(int image, String title, String descrip) {
-        this.image = image;
-        this.title = title;
-        this.descrip = descrip;
+
+
+
+    public class Model  {
+
+
+
+   private String Image;
+    private String Title;
+    private String Description;
+    private String Price;
+    private String Delivery;
+    private String d_id;
+
+
+
+    public Model( String image, String Title, String Description, String Delivery, String Price , String d_id) {
+        this.d_id = d_id;
+        Image = image;
+        this.Title = Title;
+        this.Description = Description;
+        this.Delivery=Delivery;
+        this.Price=Price;
     }
 
-    public int getImage() {
-        return image;
+
+
+    public String getImage() {
+        return Image;
     }
 
-    public void setImage(int image) {
-        this.image = image;
+    public void setImage(String image) {
+        Image = image;
     }
+
 
     public String getTitle() {
-        return title;
+        return Title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setTitle(String Title) {
+        this.Title = Title;
     }
 
-    public String getDescrip() {
-        return descrip;
+    public String getDescription() {
+        return Description;
     }
 
-    public void setDescrip(String descrip) {
-        this.descrip = descrip;
+    public void setDescription(String Description) {
+        this.Description = Description;
     }
-}
+
+    public String getPrice() {
+        return Price;
+    }
+
+    public void setPrice(String Price) {
+        this.Price = Price;
+    }
+
+    public String getDelivery() {
+        return Delivery;
+    }
+
+    public void setDelivery(String Delivery) {
+        this.Delivery = Delivery;
+    }
+
+
+
+    public Model()
+{
+
+}}

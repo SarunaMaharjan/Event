@@ -27,9 +27,9 @@ public class Front_slide extends AppCompatActivity {
         button = findViewById(R.id.btnlogin);
 
         models = new ArrayList<>();
-        models.add(new Model(R.drawable.evee,"EVENT PLANNING","come and join us to nmake ur special one feel special"));
-        models.add(new Model(R.drawable.wow,"PARTY","calm and enjoy your party"));
-        models.add(new Model(R.drawable.christ,"CHRISTMAS","merry christmas to everyone"));
+       // models.add(new Model(R.drawable.evee,"EVENT PLANNING","come and join us to nmake ur special one feel special"));
+        //models.add(new Model(R.drawable.wow,"PARTY","calm and enjoy your party"));
+       // models.add(new Model(R.drawable.christ,"CHRISTMAS","merry christmas to everyone"));
 
 
         button.setOnClickListener(new View.OnClickListener() {

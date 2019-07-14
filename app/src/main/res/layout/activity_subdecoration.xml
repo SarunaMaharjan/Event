@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp"
+        app:contentPadding="5dp"
+        app:cardUseCompatPadding="true">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+
+        <ImageView
+                android:id="@+id/post"
+                android:layout_width="match_parent"
+                android:layout_height="292dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+
+
+        <TextView
+                android:layout_width="133dp"
+                android:layout_height="46dp"
+                android:id="@+id/price"
+                android:textSize="20dp"
+                android:textColor="@color/colorGreen"
+                android:text="100"
+                android:layout_marginTop="300dp"/>
+
+        <Button
+                android:layout_width="95dp"
+                android:layout_height="68dp"
+                android:id="@+id/cart"
+                android:text="ADD TO CART"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorBlue"
+                android:layout_marginHorizontal="230dp"
+                android:background="@color/colorGrey"
+                android:layout_marginTop="300dp"
+
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/description"
+                android:layout_below="@+id/cart"
+                android:hint="Description unavailable"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:fontFamily="@font/avenirltstd_roman"
+                android:textSize="20dp"
+                android:layout_marginTop="7dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deli"
+                android:layout_below="@+id/description"
+                android:hint="Home delivery"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:fontFamily="@font/avenirltstd_roman"
+                android:textSize="20dp"
+                android:layout_marginTop="40dp"/>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

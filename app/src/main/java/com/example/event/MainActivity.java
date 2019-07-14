@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,8 +13,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private ImageButton i1,i2,i3,i4,i5,i6,i7,i8;
     private ImageButton home,account;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +28,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         i7=findViewById(R.id.i7);
         i8=findViewById(R.id.i8);
 
+
+
+
+
         i1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              startActivity(new Intent(MainActivity.this,Caterin.class));
+              startActivity(new Intent(MainActivity.this, Food.class));
             }
         });
 
@@ -86,6 +87,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this,Tent.class));
             }
         });
+
+
 
 
 
