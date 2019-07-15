@@ -37,6 +37,7 @@ public class Navigation extends AppCompatActivity implements View.OnClickListene
              return  true;}
                  else if (id == R.id.cart) {
                  setFragment(cartFragment);
+
                  return true;
              }
                     else if(id ==R.id.pro) {

@@ -8,21 +8,15 @@
         tools:context=".MainActivity">
 
 
-
-
-    <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scrollbarStyle="insideInset"
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+                android:scrollbarStyle="insideInset"
     android:id="@+id/scroll">
 
 
         <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
                 android:id="@+id/re"
-
         >
 
             <ImageButton
@@ -131,17 +125,15 @@
                     android:layout_marginHorizontal="238dp"
                     android:textColor="@color/colorPrimaryDark"
                     android:fontFamily="serif"
-
-                    android:layout_marginTop="44dp"/>
-                android:layout_marginTop="4dp"/>
-
+                    android:layout_marginTop="4dp"/>
             <ImageButton
                     android:layout_width="158dp"
                     android:layout_height="162dp"
                     android:layout_marginTop="740dp"
                     android:layout_marginHorizontal="10dp"
                     android:id="@+id/i7"
-                    android:src="@mipmap/sound"/>
+                    android:src="@mipmap/sound"
+            />
 
             <TextView
                     android:layout_width="98dp"
@@ -159,7 +151,8 @@
                     android:layout_marginHorizontal="205dp"
                     android:layout_marginTop="740dp"
                     android:id="@+id/i8"
-                    android:src="@mipmap/tent"/>
+                    android:src="@mipmap/tent"
+            />
             <TextView
                     android:layout_width="98dp"
                     android:layout_height="46dp"
@@ -176,15 +169,12 @@
                     android:layout_height="wrap_content"
                     android:text="                           CATEGORIES"
                     android:textSize="20dp"
-                    android:textColor="@color/colorAccent"/>
+                    android:textColor="@color/colorAccent"
+            />
         </RelativeLayout>
 
 
     </ScrollView>
 
 
-
-
 </RelativeLayout>
-
-
