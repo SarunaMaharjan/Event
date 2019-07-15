@@ -21,8 +21,8 @@
     <Button
             android:id="@+id/btnlogin"
             android:text="GO TO LOGIN"
-            android:textColor="#7e455e"
-            android:background="@color/aqua"
+            android:textColor="#000000"
+            android:background="@color/colorAccent"
             android:paddingLeft="30dp"
             android:paddingRight="30dp"
             android:layout_alignParentBottom="true"

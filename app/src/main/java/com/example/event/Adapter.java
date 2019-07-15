@@ -13,11 +13,11 @@ import java.util.List;
 
 public class Adapter extends PagerAdapter {
 
-    private List<Model> models;
+    private List<Models> models;
     private LayoutInflater layoutInflater;
     private Context context;
 
-    public Adapter(List<Model> models, Context context) {
+    public Adapter(List<Models> models, Context context) {
         this.models = models;
         this.context = context;
     }
@@ -44,9 +44,9 @@ public class Adapter extends PagerAdapter {
         imageView= view.findViewById(R.id.image);
         title= view.findViewById(R.id.title);
         descrip = view.findViewById(R.id.descrip);
-     //   imageView.setImageResource(models.get(position).getImage());
-        title.setText(models.get(position).getTitle());
-        //descrip.setText(models.get(position).getDescrip());
+        imageView.setImageResource(models.get(position).getIm());
+        title.setText(models.get(position).getTi());
+        descrip.setText(models.get(position).getDes());
 
         container.addView(view,0);
         return view;

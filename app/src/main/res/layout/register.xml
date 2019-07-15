@@ -13,6 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="USERNAME"
+            android:elevation="@dimen/_28sdp"
           />
 
     <EditText
@@ -22,6 +23,7 @@
             android:layout_height="wrap_content"
             android:hint="PASSWORD"
             android:inputType="textPassword"
+            android:elevation="@dimen/_28sdp"
            />
 
     <EditText
@@ -30,17 +32,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="E-MAIL"
+            android:elevation="@dimen/_28sdp"
      />
 
-    <TextView
+    <Button
             android:id="@+id/register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="REGISTER"
             android:textStyle="bold"
             android:textAlignment="center"
-            android:layout_marginHorizontal="120dp"
+            android:layout_marginHorizontal="140dp"
             android:layout_marginTop="40dp"
+            android:background="@color/colorAccent"
             />
 
     <TextView

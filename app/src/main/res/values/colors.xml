@@ -11,8 +11,9 @@
     <color name="color3">#C0C0C0</color>
     <color name="white">#FFFFFF</color>
     <color name="whiteTrans">#aaaaaa</color>
+    <color name="orange"> #ffa500</color>
 
-   <color name="colorAccent">#68A269</color>
+    <color name="colorAccent">#68A269</color>
     <color name="colorGreen">#34CF3E</color>
     <color name="colorGrey">#40181010</color>
     <color name="colorBlue">#124DC7</color>
