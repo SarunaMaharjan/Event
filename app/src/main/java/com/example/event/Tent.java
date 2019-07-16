@@ -23,7 +23,7 @@ public class Tent extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tent);
 
-        Intent intent=new Intent(this,MainActivity.class);
+       // Intent intent=new Intent(this,Homefragment.class);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Tents");

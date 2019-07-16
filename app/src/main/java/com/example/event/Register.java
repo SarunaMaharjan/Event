@@ -37,7 +37,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
 
         if (firebaseAuth.getCurrentUser() != null) {
 
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            startActivity(new Intent(getApplicationContext(),Navigation.class));
             finish();
         }
 
@@ -99,7 +99,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
                         if (task.isSuccessful()) {
                             Toast.makeText(Register.this, "REGISTRATION COMPLETE", Toast.LENGTH_SHORT).show();
                             finish();
-                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            startActivity(new Intent(getApplicationContext(), Navigation.class));
 
                         }
                         else {

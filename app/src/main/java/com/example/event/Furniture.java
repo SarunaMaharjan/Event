@@ -26,7 +26,7 @@ public class Furniture extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Furnitures");
 
-        Intent intent = new Intent(this, MainActivity.class);
+        //Intent intent = new Intent(this, MainActivity.class);
 
         lv= (ListView) findViewById(R.id.listview1);
 

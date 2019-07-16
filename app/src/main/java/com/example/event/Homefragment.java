@@ -43,7 +43,9 @@ public class Homefragment extends Fragment implements View.OnClickListener{
         i2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(),Decoration.class));
+                Intent intent = new Intent(getActivity(),Decoration.class);
+
+                startActivity(intent);
             }
         });
 

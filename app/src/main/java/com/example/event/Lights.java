@@ -32,7 +32,7 @@ public class Lights extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lights);
 
-        Intent intent=new Intent(this,MainActivity.class);
+      //  Intent intent=new Intent(this,MainActivity.class);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Lights");

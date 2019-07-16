@@ -96,7 +96,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
                             Toast.makeText(Login.this, "LOGIN COMPLETE", Toast.LENGTH_SHORT).show();
                             finish();
-                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            startActivity(new Intent(getApplicationContext(), Navigation.class));
 
                         } else
                         {

@@ -27,7 +27,7 @@ public class Games extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_games);
 
-        Intent intent=new Intent(this,MainActivity.class);
+        //Intent intent=new Intent(this,MainActivity.class);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Games");

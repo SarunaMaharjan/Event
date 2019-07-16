@@ -23,7 +23,7 @@ public class Sound extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sound);
 
-        Intent intent=new Intent(this,MainActivity.class);
+        //Intent intent=new Intent(this,MainActivity.class);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Sound Systems");
 

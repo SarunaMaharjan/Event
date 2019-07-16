@@ -24,7 +24,7 @@ public class Projector extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_projector);
-        Intent intent=new Intent(this,MainActivity.class);
+       // Intent intent=new Intent(this,Homefragment.class);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Decoration");
