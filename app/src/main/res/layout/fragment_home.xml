@@ -26,8 +26,8 @@
                     android:layout_width="98dp"
                     android:layout_height="46dp"
                     android:layout_below="@+id/i1"
-                    android:text="CATERING"
-                    android:layout_marginHorizontal="55dp"
+                    android:text="FOOD"
+                    android:layout_marginHorizontal="75dp"
                     android:textColor="@color/colorPrimaryDark"
                     android:fontFamily="serif"
                     android:layout_marginTop="6dp"/>

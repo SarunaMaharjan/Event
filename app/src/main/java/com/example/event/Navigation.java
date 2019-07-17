@@ -27,8 +27,8 @@ public class Navigation extends AppCompatActivity implements View.OnClickListene
         final Homefragment homefragment = new Homefragment();
         final CartFragment cartFragment = new CartFragment();
         final ProfileFragment profileFragment = new ProfileFragment();
-        setFragment(homefragment);
-        //setFragment(profileFragment);
+       setFragment(homefragment);
+       //setFragment(profileFragment);
         navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
          @Override
          public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -38,6 +38,7 @@ public class Navigation extends AppCompatActivity implements View.OnClickListene
              return  true;}
                  else if (id == R.id.cart) {
                  setFragment(cartFragment);
+
                  return true;
              }
                     else if(id ==R.id.pro) {
@@ -51,7 +52,7 @@ public class Navigation extends AppCompatActivity implements View.OnClickListene
 
 
      navigationView.setSelectedItemId(R.id.home);
-     //navigationView.setSelectedItemId(R.id.pro);
+     //   navigationView.setSelectedItemId(R.id.pro);
 
     }
 

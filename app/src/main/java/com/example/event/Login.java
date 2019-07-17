@@ -19,7 +19,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Login extends AppCompatActivity implements View.OnClickListener {
+public class Login<view> extends AppCompatActivity implements View.OnClickListener{
+
+
     private TextView Login, Log;
     private EditText Email1, Password1;
 
@@ -39,20 +41,20 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         if (firebaseAuth.getCurrentUser() != null) {
 
             finish();
-            startActivity(new Intent(getApplicationContext(),Navigation.class));
+            startActivity(new Intent(getApplicationContext(), Navigation.class));
 
         }
 
         progressDialog = new ProgressDialog(this);
 
         Login = (TextView) findViewById(R.id.login);
-        Email1 = (EditText) findViewById(R.id.email1);
+        Email1 = (EditText) findViewById(R.id.name);
         Password1 = (EditText) findViewById(R.id.password1);
-        Log = (TextView) findViewById(R.id.not);
+        //Log = (TextView) findViewById(R.id.not);
 
 
-       Login.setOnClickListener(this);
-        Log.setOnClickListener(this);
+        Login.setOnClickListener(this);
+        //Log.setOnClickListener(this);
     }
 
 
@@ -98,8 +100,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                             finish();
                             startActivity(new Intent(getApplicationContext(), Navigation.class));
 
-                        } else
-                        {
+                        } else {
 
                             Toast.makeText(Login.this, "LOGIN FAILED...PLEASE TRY AGAIN", Toast.LENGTH_SHORT).show();
 
@@ -111,19 +112,22 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     }
 
 
-
     public void onClick(View view) {
 
         if (view == Login) {
             userLogin();
         }
-
-        if (view == Log) {
-            //finish();
-           startActivity(new Intent(this, Register.class));
-        }
     }
 
+      /* if(view ==Log)
 
-
+    {
+        //finish();
+        startActivity(new Intent(this, Register.class));
+    }*/
 }
+
+
+
+
+

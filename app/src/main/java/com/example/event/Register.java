@@ -124,7 +124,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         }
 
         if (view == Sign) {
-            startActivity(new Intent(this, Login.class));
+            //startActivity(new Intent(this, Login.class));
 
         }
     }

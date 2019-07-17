@@ -2,7 +2,8 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
-             android:layout_height="match_parent"
+             android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:background="@drawable/l1"
              tools:context=".ProfileFragment">
 
 
@@ -26,7 +27,10 @@
             android:padding="10dp"
             android:text="Add your Profile here"
             android:textSize="@dimen/_16sdp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+
 
 
 
@@ -38,7 +42,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/avenirltstd_roman"
             android:hint="Username"
-            android:textSize="@dimen/_16sdp" />
+            android:textSize="@dimen/_16sdp"
+            android:textColor="#000000"/>
 
     <EditText
             android:id="@+id/memo"
@@ -46,7 +51,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/avenirltstd_roman"
             android:hint="Memo"
-            android:textSize="@dimen/_16sdp" />
+            android:textSize="@dimen/_16sdp"
+            android:textColor="#000000"/>
 
     <EditText
             android:id="@+id/address"
@@ -54,32 +60,45 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/avenirltstd_roman"
             android:hint="Address"
-            android:textSize="@dimen/_16sdp" />
+            android:textSize="@dimen/_16sdp"
+            android:textColor="#000000"/>
+
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pho"
+                android:fontFamily="@font/avenirltstd_roman"
+                android:hint="Phone"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="#000000"/>
+
+
+        <Button
+                android:id="@+id/save"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/avenirltstd_roman"
+                android:text="Save Information"
+                android:background="@color/color2"/>
+
+        <Button
+                android:id="@+id/logout"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/avenirltstd_roman"
+                android:text="Logout"
+                android:layout_centerHorizontal="true"
+                android:background="@color/color2"
+                android:layout_marginTop="@dimen/_16sdp"/>
 
 
 
-    <Button
-            android:id="@+id/save"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/avenirltstd_roman"
-            android:text="Save Information"
-    android:background="@color/colorAccent"/>
-
-    <Button
-            android:id="@+id/logout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/avenirltstd_roman"
-            android:text="Logout"
-            android:layout_centerHorizontal="true"
-    android:background="@color/colorAccent"
-    android:layout_marginTop="@dimen/_16sdp"/>
 
 
-    />
+
 
 </LinearLayout>
 

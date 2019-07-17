@@ -3,6 +3,7 @@
           package="com.example.event">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
             android:allowBackup="true"
@@ -11,9 +12,12 @@
             android:roundIcon="@mipmap/evento"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".Navigation">
+
+        <activity android:name=".Navigation"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
-        <activity android:name=".Front_slide">
+        <activity android:name=".Front_slide"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <action android:name="android.intent.action.MAIN"/>
@@ -22,11 +26,16 @@
             </intent-filter>
         </activity>
 
+
+
         <activity android:name=".Subtent">
 
         </activity>
         <activity android:name=".SubSound">
         </activity>
+        <activity android:name=".Login"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
 
 
         <activity android:name=".SubProjector">
@@ -58,8 +67,7 @@
         </activity>
         <activity android:name=".Food">
         </activity>
-        <activity android:name=".Login">
-        </activity>
+
         <activity android:name=".Register"/>
     </application>
 

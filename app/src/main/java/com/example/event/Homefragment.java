@@ -19,7 +19,7 @@ public class Homefragment extends Fragment implements View.OnClickListener{
     private ImageButton home,account;
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container ,@Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.activity_main, container, false);
         i1 = view.findViewById(R.id.i1);
         i2 = view.findViewById(R.id.i2);
         i3 = view.findViewById(R.id.i3);
@@ -31,11 +31,10 @@ public class Homefragment extends Fragment implements View.OnClickListener{
         //
         //return inflater.inflate(R.layout.fragment_home,container,false);
 
-
-        i1.setOnClickListener(new View.OnClickListener() {
+        i1 .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), Food.class));
+                startActivity(new Intent(getActivity(),Food.class));
             }
         });
 
@@ -43,9 +42,7 @@ public class Homefragment extends Fragment implements View.OnClickListener{
         i2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),Decoration.class);
-
-                startActivity(intent);
+                startActivity(new Intent(getActivity(),Decoration.class));
             }
         });
 

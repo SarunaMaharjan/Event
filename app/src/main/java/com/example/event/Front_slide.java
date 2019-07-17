@@ -38,7 +38,7 @@ public class Front_slide extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Front_slide.this,Login.class));
+               startActivity(new Intent(Front_slide.this,Login.class));
             }
         });
 

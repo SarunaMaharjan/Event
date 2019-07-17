@@ -1,14 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".CartFragment">
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp"
+        app:contentPadding="5dp"
+        app:cardUseCompatPadding="true">
 
 
-    <TextView
+    <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+            android:layout_height="match_parent">
 
-</FrameLayout>
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+
+
+            <ImageView
+                    android:id="@+id/post"
+                    android:layout_width="match_parent"
+                    android:layout_height="292dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:background="@mipmap/balloon"/>
+
+
+            <TextView
+                    android:layout_width="133dp"
+                    android:layout_height="46dp"
+                    android:id="@+id/price"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorGreen"
+                    android:text="Rs. 100"
+                    android:layout_marginTop="300dp"/>
+
+            <Button
+                    android:layout_width="95dp"
+                    android:layout_height="68dp"
+                    android:id="@+id/placeorder"
+                    android:text="PLACE ORDER"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorBlue"
+                    android:layout_marginHorizontal="230dp"
+                    android:background="@color/colorGrey"
+                    android:layout_marginTop="300dp"
+
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/quan"
+                    android:layout_below="@+id/placeorder"
+                    android:text="Quantity: "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenirltstd_roman"
+                    android:textSize="20dp"
+                    android:layout_marginTop="7dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/quantity"
+                    android:hint=" 1 "
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_below="@+id/quan"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenirltstd_roman"
+                    android:textSize="20dp"
+                    android:layout_marginTop="-27dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/total"
+                    android:layout_below="@+id/quan"
+                    android:text="TOTAL: "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenirltstd_roman"
+                    android:textSize="20dp"
+                    android:layout_marginTop="7dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalprice"
+                    android:hint="total price"
+                    android:layout_below="@+id/quan"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/avenirltstd_roman"
+                    android:textSize="20dp"
+                    android:layout_marginTop="40dp"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

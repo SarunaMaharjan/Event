@@ -44,7 +44,7 @@ public class Adapter extends PagerAdapter {
         imageView= view.findViewById(R.id.image);
         title= view.findViewById(R.id.title);
         descrip = view.findViewById(R.id.descrip);
-        imageView.setImageResource(models.get(position).getIm());
+       imageView.setImageResource(models.get(position).getIm());
         title.setText(models.get(position).getTi());
         descrip.setText(models.get(position).getDes());
 

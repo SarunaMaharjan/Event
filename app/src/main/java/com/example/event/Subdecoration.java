@@ -25,6 +25,8 @@ public class Subdecoration extends AppCompatActivity  {
     FirebaseDatabase database;
     DatabaseReference foods;
 
+    Model currentfood;
+
 
 
     @Override
@@ -55,9 +57,21 @@ public class Subdecoration extends AppCompatActivity  {
         cart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+               /*new Database(getBaseContext()).addToCart(new Order(
+                        foodId,
+                        currentfood.getPrice(),
+                        currentfood.getTitle(),
+                        currentfood.getDescription(),
+                        currentfood.getDelivery()));*/
+
                 Toast.makeText(getApplicationContext(),"ITEM ADDED TO CART",Toast.LENGTH_LONG).show();
             }
         });
+
+
+
     }
 
 
@@ -67,12 +81,12 @@ public class Subdecoration extends AppCompatActivity  {
         foods.child(foodId).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Model food =dataSnapshot.getValue(Model.class);
+                currentfood =dataSnapshot.getValue(Model.class);
 
-                Picasso.with(getBaseContext()).load(food.getImage()).into(img);
-                price.setText("Rs. " + food.getPrice());
-                description.setText("Detail:  " + food.getDescription());
-                delivery.setText("Delivery Information : " + food.getDelivery());
+                Picasso.with(getBaseContext()).load(currentfood.getImage()).into(img);
+                price.setText("Rs. " + currentfood.getPrice());
+                description.setText("Detail:  " + currentfood.getDescription());
+                delivery.setText("Delivery Information : " + currentfood.getDelivery());
 
             }
 
